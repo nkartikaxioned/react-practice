@@ -1,13 +1,11 @@
+import { MenuItem } from "./MenuItem";
 
-
-export const MenuList = ({list}) => {
-  
-  return(
-    list.map((menu) => {
-      <li>
-        
-      </li>
-    })
-  )
-  
-}
+export const MenuList = ({ list }) => {
+  return (
+    <ul>
+      {list.map((menu) => {
+        return <MenuItem item={menu} />;
+      })}
+    </ul>
+  );
+};

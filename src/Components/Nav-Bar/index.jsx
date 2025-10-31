@@ -7,7 +7,7 @@ export const PrimaryNav = ({menu = []}) => {
       <nav className="primary-nav">
         <MenuList list = {menu}/>
       </nav> 
-      : "null"
+      : null
   );
   
 }
